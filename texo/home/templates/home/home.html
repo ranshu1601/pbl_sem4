@@ -1,0 +1,28 @@
+{% extends 'home/base.html' %}
+{% block content %}
+<br>
+<h1 align="center" style="font-size:40px " ><b> Text Summarizer </b> </h1>
+<div class="flex py-4">
+    <div class="px-32 py-24 w-3/6">
+        <!-- <input type="text" class="px-20 py-40 border-4 "> -->
+        <textarea placeholder="Enter the input..." cols="50" rows="15" class="px-2 py-2 border-4"></textarea>
+        <button
+                class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow">
+            Upload File
+        </button>
+        <div class="px-[28rem]">
+            <button
+                    class="bg-green-500 hover:bg-green-400 text-white font-bold py-2 px-2 border-b-4 border-green-700 hover:border-green 500 rounded">
+                SUMMARIZE
+            </button>
+        </div>
+
+    </div>
+
+    <div class="px-32 py-24 w-3/6">
+        <!-- <input type="text" class="px-20 py-40 border-4"> -->
+        <textarea placeholder="" cols="50" rows="15" class="px-2 py-2 border-4"></textarea>
+    </div>
+</div>
+
+{% endblock %}
